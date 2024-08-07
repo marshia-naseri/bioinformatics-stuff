@@ -1,0 +1,3 @@
+name:Babak Niazi()age:38()tumor type:adenoma()tumor class:benign()tumor stage:3()treatment plan:1-2()
+name:Reza Boroomand()age:65()tumor type:hepatocellular carcinoma()tumor class:Malignant()tumor stage:4()
+name:Zahra Latifi()age:45()tumor type:breast cancer()tumor class:malignant()tumor stage:3()treatment plan:3-2()
