@@ -33,10 +33,11 @@ dna=input('please enter your dna sequence: ')
 dna=''.join(dna.splitlines()).strip()
 p=''
 n=0
+print('\nresults:\n')
 while len(dna)>=3:
     codon=dna[0:3]
+    n+=1
     if codon in end:
-        n+=1
         scodon=codon
         break
     x=codons.get(codon)
@@ -44,7 +45,6 @@ while len(dna)>=3:
     x[1]+=1
     codons[codon]=x
     dna=dna[3:]
-    n+=1
 m=''
 l=''
 for codon in codons:
@@ -68,6 +68,8 @@ for codon in codons:
             ls=codon
     if l==0:
         l=''
+    if m==0:
+        m=''
 print(f"{scodon} : {1/n*100}%")
 print(f"\nmax : {ms},{m}\nleast : {ls},{l}")
 print(f"protein : {p}")
